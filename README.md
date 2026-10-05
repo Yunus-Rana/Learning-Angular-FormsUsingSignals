@@ -56,7 +56,4 @@ deploy this as-is. A production login should remove that preview, send
 credentials only over HTTPS to a trusted authentication service, and avoid
 logging passwords.
 
-## License
 
-No license is currently specified. Add a `LICENSE` file before redistributing
-the project if you want to grant others explicit reuse rights.
