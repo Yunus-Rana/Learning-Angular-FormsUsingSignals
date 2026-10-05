@@ -1,59 +1,62 @@
-# FormswithSignals
+# Forms with Angular Signals
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 22.1.8.
+A responsive login form demo built with Angular Signal Forms. It demonstrates
+signal-based form state, email and password validation, inline validation
+messages, and a custom dark glassmorphism design.
 
-## Development server
+## Features
 
-To start a local development server, run:
+- Angular Signal Forms using `form()` and `FormField`
+- Required and format validation for email
+- Required, minimum-length, and letter-and-number validation for password
+- Inline validation messages shown after a field is touched
+- Submit button disabled until the form is valid
+- Reset action to clear the form
+- Responsive styling for mobile and desktop
 
-```bash
-ng serve
-```
+## Requirements
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+- Node.js compatible with the installed Angular CLI
+- npm
 
-## Code scaffolding
+## Getting started
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
-
-```bash
-ng generate component component-name
-```
-
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
-
-```bash
-ng generate --help
-```
-
-## Building
-
-To build the project run:
+Clone the repository, then install dependencies and start the development server:
 
 ```bash
-ng build
+npm install
+npm start
 ```
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
+Open [http://localhost:4200](http://localhost:4200) in your browser. The
+development server reloads the app when source files change.
 
-## Running unit tests
+## Available commands
 
-To execute unit tests with the [Vitest](https://vitest.dev/) test runner, use the following command:
+| Command | Description |
+| --- | --- |
+| `npm start` | Start the local development server |
+| `npm run build` | Build the application |
+| `npm run watch` | Rebuild when source files change |
+| `npm test` | Run the unit tests |
 
-```bash
-ng test
-```
+## Project structure
 
-## Running end-to-end tests
+- `src/app/app.ts` — form model, validation rules, submit, and reset logic
+- `src/app/app.html` — login form template
+- `src/app/app.css` — component styles
+- `src/styles.css` — global styles
 
-For end-to-end (e2e) testing, run:
+## Security note
 
-```bash
-ng e2e
-```
+This is a front-end learning demo, not a production authentication system. The
+form currently initializes with sample values and displays the model values,
+including the password, as a live preview. Do not use real credentials or
+deploy this as-is. A production login should remove that preview, send
+credentials only over HTTPS to a trusted authentication service, and avoid
+logging passwords.
 
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
+## License
 
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+No license is currently specified. Add a `LICENSE` file before redistributing
+the project if you want to grant others explicit reuse rights.
